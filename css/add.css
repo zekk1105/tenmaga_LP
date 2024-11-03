@@ -309,7 +309,7 @@ body {
 
 /* MVセクションのスタイル */
 .mv-section {
-    background-image: url('/img/main-visual-bg.png'); /* 背景画像 */
+    background-image: url('../img/main-visual-bg.png'); /* 背景画像 */
     background-size: cover;
     background-position: center;
     padding: 300px 20px 200px;
@@ -590,7 +590,7 @@ body {
     padding: 100px 20px;
     position: relative;
     overflow: hidden;
-    background-image: url('/img/logo_back.png');
+    background-image: url('../img/logo_back.png');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 50vh;
