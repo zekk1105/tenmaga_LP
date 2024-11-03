@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー | テンマガアフィリエイト</title>
+    <link rel="stylesheet" href="/css/add.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-top">
+            <a href="index.html" class="logo">
+                <img src="/img/logo_head.png" alt="#テンマガアフィリエイト ロゴ">
+                <p class="header-text">20,000円から求人ができれば楽になりませんか？</p>
+            </a>
+            <a href="contact.html" class="contact-button">
+                <img src="/img/mail.png">
+                無料相談
+            </a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html#problem" onclick="closeMenu()">課題<br><span>PROBLEM</span></a></li>
+                <li><a href="index.html#service" onclick="closeMenu()">サービス<br><span>SERVICE</span></a></li>
+                <li><a href="index.html#plan" onclick="closeMenu()">料金<br><span>PLAN</span></a></li>
+                <li><a href="index.html#achievements" onclick="closeMenu()">実績<br><span>ACHIEVEMENTS</span></a></li>
+                <li><a href="index.html#faq" onclick="closeMenu()">FAQ<br><span>QUESTIONS</span></a></li>
+                <li><a href="index.html#contact" onclick="closeMenu()">お問合わせ<br><span>CONTACT</span></a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav');
+            const hamburger = document.querySelector('.hamburger');
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            const nav = document.querySelector('.nav');
+            const hamburger = document.querySelector('.hamburger');
+            nav.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
+
+        window.addEventListener('resize', () => {
+            const nav = document.querySelector('.nav');
+            const hamburger = document.querySelector('.hamburger');
+            if (window.innerWidth > 768) {
+                nav.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
+
+    <!-- プライバシーポリシーセクション -->
+    <section class="privacy-section">
+        <h2 class="section-title">プライバシーポリシー</h2>
+        <div class="privacy-content">
+            <h3>第1条（個人情報の定義）</h3>
+            <p>本プライバシーポリシーにおいて、「個人情報」とは、個人情報保護法に基づき、生存する個人に関する情報であり、氏名、住所、電話番号、メールアドレスなど、特定の個人を識別できる情報を指します。</p>
+
+            <h3>第2条（個人情報の収集方法）</h3>
+            <p>当社は、利用者が登録やお問い合わせを行う際に、氏名、連絡先情報、その他必要な個人情報を適正な手段で収集します。</p>
+
+            <h3>第3条（個人情報の利用目的）</h3>
+            <p>当社が収集した個人情報は、以下の目的で利用します。</p>
+            <ul>
+                <li>・本サービスの提供および運営のため</li>
+                <li>・利用者からのお問い合わせに対応するため</li>
+                <li>・利用規約に違反した利用者の特定および通知のため</li>
+                <li>・メンテナンス、重要なお知らせなど必要に応じたご連絡のため</li>
+                <li>・マーケティングや分析のための統計データの作成（個人を特定しない範囲）</li>
+                <li>・その他、上記の利用目的に付随する目的</li>
+            </ul>
+
+            <h3>第4条（個人情報の第三者提供）</h3>
+            <p>当社は、法令に基づく場合を除き、利用者の同意を得ずに個人情報を第三者に提供することはありません。ただし、次の場合はこの限りではありません。</p>
+            <ul>
+                <li>・法令に基づく場合</li>
+                <li>・人の生命、身体または財産の保護に必要がある場合で、本人の同意を得ることが困難であるとき</li>
+                <li>・公衆衛生の向上や児童の健全な育成に特に必要がある場合で、本人の同意を得ることが困難であるとき</li>
+                <li>・国の機関や地方公共団体からの要請に応じるためで、本人の同意を得ることが困難である場合</li>
+            </ul>
+
+            <h3>第5条（個人情報の開示）</h3>
+            <p>当社は、本人からの請求があった場合、速やかに個人情報を開示します。ただし、開示に応じられない場合があり、その際にはその理由を通知します。</p>
+
+            <h3>第6条（個人情報の訂正および削除）</h3>
+            <p>利用者が当社の保有する個人情報の訂正、追加、削除を希望する場合、当社所定の手続により請求することができます。</p>
+
+            <h3>第7条（個人情報の利用停止等）</h3>
+            <p>利用者からの請求があった場合、当社は速やかに個人情報の利用停止または消去を行い、適切に対応いたします。</p>
+
+            <h3>第8条（プライバシーポリシーの変更）</h3>
+            <p>当社は、必要に応じて本ポリシーを変更することができ、変更後のプライバシーポリシーは、本サービスのウェブサイトに掲載した時点で効力を生じるものとします。</p>
+
+            <h3>第9条（お問い合わせ窓口）</h3>
+            <p>本ポリシーに関するお問い合わせは、以下の窓口までお願いいたします。</p>
+            <p>株式会社マジバス<br>
+                住所：〒540-0012 大阪府大阪市中央区谷町1丁目3-19 大手前エストビル2階<br>
+                メールアドレス：support@example.com</p>
+        </div>
+    </section>
+
+
+    <section class="company-info">
+        <div class="transparent-background"></div>
+        <div class="company-details">
+            <img src="/img/logo_foot.png" alt="テンマガアフィリエイト ロゴ" class="company-logo">
+            <p class="company-name">株式会社マジバス</p>
+            <p class="company-address">〒540-0012 大阪府大阪市中央区谷町1丁目3-19 <br class="d-md-none">大手前エストビル2階</p>
+        </div>
+        <button class="back-to-top" onclick="scrollToTop()">▲</button>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="terms.html">利用規約</a>
+            <span>　</span>
+            <a href="privacy.html">プライバシーポリシー</a>
+        </div>
+        <p class="footer-copyright">© majibass Inc.</p>
+    </footer>
+
+    <script>
+        // TOPへ戻るボタンのスクロール機能
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        // スクロールに応じてTOPへ戻るボタンの表示を切り替える
+        window.addEventListener("scroll", () => {
+            const backToTopButton = document.querySelector(".back-to-top");
+            if (window.scrollY > 200) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+    </script>
+
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = button.querySelector('.toggle-icon');
+
+                // クラスを切り替えて回答の表示を制御
+                answer.classList.toggle('visible');
+                icon.textContent = answer.classList.contains('visible') ? 'ー' : '＋';
+
+                // .faq-questionにrounde-2クラスを付与または削除
+                button.classList.toggle('round-2');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

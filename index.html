@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テンマガアフィリエイト</title>
+    <link rel="stylesheet" href="/css/add.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-top">
+            <a href="index.html" class="logo">
+                <img src="/img/logo_head.png" alt="#テンマガアフィリエイト ロゴ">
+                <p class="header-text">20,000円から求人ができれば楽になりませんか？</p>
+            </a>
+            <a href="contact.html" class="contact-button">
+                <img src="/img/mail.png">
+                無料相談
+            </a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#problem" onclick="closeMenu()">課題<br><span>PROBLEM</span></a></li>
+                <li><a href="#service" onclick="closeMenu()">サービス<br><span>SERVICE</span></a></li>
+                <li><a href="#plan" onclick="closeMenu()">料金<br><span>PLAN</span></a></li>
+                <li><a href="#achievements" onclick="closeMenu()">実績<br><span>ACHIEVEMENTS</span></a></li>
+                <li><a href="#faq" onclick="closeMenu()">FAQ<br><span>QUESTIONS</span></a></li>
+                <li><a href="#contact" onclick="closeMenu()">お問合わせ<br><span>CONTACT</span></a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav');
+            const hamburger = document.querySelector('.hamburger');
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            const nav = document.querySelector('.nav');
+            const hamburger = document.querySelector('.hamburger');
+            nav.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
+
+        window.addEventListener('resize', () => {
+            const nav = document.querySelector('.nav');
+            const hamburger = document.querySelector('.hamburger');
+            if (window.innerWidth > 768) {
+                nav.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
+
+
+
+    <!-- メインビジュアル -->
+    <section class="mv-section">
+        <div class="mv-content">
+            <h1 class="mv-title d-sp-none">
+                <span class="mv-char">業</span>
+                <span class="mv-char2">界</span>
+                <span class="mv-char">最</span>
+                <span class="mv-char2">安</span>
+                <span class="mv-char">級</span>
+            </h1>
+            <h1 class="mv-title d-md-none">
+                <span class="mv-char">業</span>
+                <span class="mv-char2">界</span>
+            </h1>
+            <h1 class="mv-title d-md-none">
+                <span class="mv-char">最</span>
+                <span class="mv-char2">安</span>
+                <span class="mv-char">級</span>
+            </h1>
+            <p class="mv-subtitle">媒体にも、エージェントにも頼らない！</p>
+            <p class="mv-price">1名 <span>20,000</span>円～の<span>採用</span>を実現</p>
+            <p class="mv-note">＼ お気軽にお問い合わせください ／</p>
+            <a href="contact.html" class="mv-button">今すぐ採用を始める</a>
+        </div>
+    </section>
+
+
+    <section class="problem-section" id="problem">
+        <img src="/img/img-text1.png" alt="" class="img-text">
+        <h2 class="section-title">3つの課題</h2>
+        <div class="problem-item">
+            <div class="problem-image">
+                <img src="/img/prob1.png" alt="高い求人広告費のイメージ">
+            </div>
+            <div class="problem-text">
+                <h3>効果が見えないのに<br><span>高い求人広告費</span></h3>
+                <p> 求人サイトや新聞広告など、従来の求人広告は高額な掲載料が必要です。<br>
+                    しかし、その効果は不透明で、<span class="highlight">多くの企業が「広告を出しても応募が少ない」「質の良い候補者に出会えない」といった悩み</span>を抱えています。<br>
+                    広告費用と採用成果が見合わないケースが多く、企業にとっては大きな負担となっています。
+                </p>
+            </div>
+        </div>
+
+        <div class="problem-item reverse">
+            <div class="problem-image">
+                <img src="/img/prob2.png" alt="エージェント費用のイメージ">
+            </div>
+            <div class="problem-text">
+                <h3>超高額化している<br><span>エージェント費用</span></h3>
+                <p>人材紹介会社を利用する場合、採用が決まると年収の30%〜35％の成功報酬が発生することがあります。<br>
+                    例えば、年収400万円の社員を採用する場合、120万円以上の費用がかかることも。人材不足が深刻化する中、<span
+                        class="highlight">エージェント費用は年々高騰しており、多くの企業にとって大きな経営課題</span>となっています。</p>
+            </div>
+        </div>
+
+        <div class="problem-item">
+            <div class="problem-image">
+                <img src="/img/prob3.png" alt="応募が全く来ないイメージ">
+            </div>
+            <div class="problem-text">
+                <h3>そもそも<br><span>応募が全く来ない</span></h3>
+                <p>求人広告を出しても、エージェントを使っても、応募者がほとんど来ないという状況に陥っている企業が増えています。特に、特殊なスキルが必要な職種や、地方の求人では、この問題が顕著です。<br>
+                    募集しても応募が来ないことで、<span class="highlight">事業拡大の機会を逃したり、既存社員の負担が増大したり</span>するなど、企業の成長に大きな支障をきたしています。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-triangle"></div>
+        <h2 class="cta-title">テンマガアフィリエイトなら<br>すべての課題を解決します！</h2>
+        <a href="contact.html">
+            <button class="cta-button" href="contact.html">
+                <p class="cta-subtitle">＼ お気軽にお問い合わせください ／</p>
+                今すぐ採用を始める
+            </button>
+        </a>
+    </section>
+
+    <section id="service" class="service-introduction">
+        <img src="/img/img-text2.png" alt="" style="width: 100%;" class="img-text">
+        <h2 class="section-title">サービス紹介</h2>
+        <div class="service-description">
+            <div>
+                <p class="note"><span>業界最安級</span>の<span>採用</span>を<span>実現</span></p>
+            </div>
+            <div>
+                <p class="note"><span>メディア</span>と<span>アフィリエイター</span>が<span>御社</span>の<span>採用</span>を</p>
+            </div>
+            <div>
+                <p><span class="badge">成</span><span class="badge2">果</span><span class="badge">報</span><span
+                        class="badge2">酬</span><br class="d-md-none"><br class="d-md-none"><span
+                        class="note">でお手伝い</span></p>
+            </div>
+        </div>
+        <div class="service-features">
+            <div class="feature-box">
+                <img src="/img/serv1.png" alt="成果報酬型">
+                <h3>成果報酬型</h3>
+                <p>面談成果なので、<br>応募が来なければ0円</p>
+            </div>
+            <div class="feature-box">
+                <img src="/img/serv2.png" alt="低コスト">
+                <h3>低コスト</h3>
+                <p>1名あたり20,000円～の<br>業界最安料金</p>
+            </div>
+            <div class="feature-box">
+                <img src="/img/serv3.png" alt="幅広いネットワーク">
+                <h3>幅広いネットワーク</h3>
+                <p>多様な人材にアプローチ可能</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="flow-section">
+        <div class="flow-step">
+            <div class="flow-space"></div>
+            <img src="/img/step1.png" alt="求人情報の登録" class="flow-image">
+            <div class="flow-content">
+                <h3 class="flow-step-title">STEP 01</h3>
+                <h4 class="flow-title">求人情報の登録</h4>
+                <p class="flow-description">採用したい人材の条件を登録するだけ。</p>
+            </div>
+        </div>
+
+        <div class="flow-step">
+            <div class="flow-space"></div>
+            <img src="/img/step2.png" alt="メディアに掲載しアフィリエイターが紹介を開始" class="flow-image">
+            <div class="flow-content">
+                <h3 class="flow-step-title">STEP 02</h3>
+                <h4 class="flow-title">メディアに掲載し<br>アフィリエイターが紹介を開始</h4>
+                <p class="flow-description">採用したい人材の条件を登録するだけ。</p>
+            </div>
+        </div>
+
+        <div class="flow-step">
+            <div class="flow-space"></div>
+            <img src="/img/step3.png" alt="成果発生" class="flow-image">
+            <div class="flow-content">
+                <h3 class="flow-step-title">STEP 03</h3>
+                <h4 class="flow-title">成果発生</h4>
+                <p class="flow-description">設定した成果に合わせて20,000円～の成果報酬が発生。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison-section">
+        <h2 class="section-title">他社サービスとの<br class="d-md-none">コスト比較</h2>
+        <div class="table-wrap">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th class="th-first"> </th>
+                        <th class="th-blue">#テンマガアフィリエイト</th>
+                        <th>求人広告</th>
+                        <th>人材紹介</th>
+                        <th>スカウトサービス</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td-first">採用エリア</td>
+                        <td class="td-icon bg-1">◎</td>
+                        <td class="td-icon bg-2">△</td>
+                        <td class="td-icon bg-1">◎</td>
+                        <td class="td-icon bg-2">△</td>
+                    </tr>
+                    <tr>
+                        <td class="td-first">希望マッチ度</td>
+                        <td class="td-icon bg-1">◎</td>
+                        <td class="td-icon bg-2">△</td>
+                        <td class="td-icon bg-1">◎</td>
+                        <td class="td-icon bg-2">△</td>
+                    </tr>
+                    <tr>
+                        <td class="td-first">CXO人材</td>
+                        <td class="td-icon bg-1">◎</td>
+                        <td class="td-icon bg-2">△</td>
+                        <td class="td-icon bg-1">◎</td>
+                        <td class="td-icon bg-2">△</td>
+                    </tr>
+                    <tr>
+                        <td class="td-first">大量採用</td>
+                        <td class="td-icon bg-1">◎</td>
+                        <td class="td-icon bg-2">△</td>
+                        <td class="td-icon bg-1">◎</td>
+                        <td class="td-icon bg-2">△</td>
+                    </tr>
+                    <tr>
+                        <td class="td-first">母集団形成</td>
+                        <td class="td-icon bg-1">◯</td>
+                        <td class="td-icon bg-2">△</td>
+                        <td class="td-icon bg-1">◎</td>
+                        <td class="td-icon bg-2">△</td>
+                    </tr>
+                    <tr>
+                        <td class="td-first">採用費用</td>
+                        <td class="td-bold bg-1"><span class="highlight">20,000</span>円～</td>
+                        <td class="td-bold bg-2"><span>500,000</span>円～</td>
+                        <td class="td-bold bg-1"><span>1,500,000</span>円～</td>
+                        <td class="td-bold bg-2"><span>50,000</span>円～</td>
+                    </tr>
+                    <tr class="text-tr">
+                        <td class="td-first">特徴</td>
+                        <td class="bg-1">
+                            成功報酬1名20,000円〜という最安級が魅力。<br><br>複数のアフィリエイターによる独自のネットワークを活用し、従来では出会えなかった人材との出会いも期待できる。<br><br>成果報酬型のた応募がなければ費用は発生せず、リスクは最小限に。
+                        </td>
+                        <td class="bg-2">
+                            多くの求職者にアプローチできる伝統的な手法。<br><br>自社のペースで採用活動を進められる一方で月額30万円以上の掲載料が必要。<br><br>応募者の質にばらつきが大きく、応募が来ないケースも増えており費用対効果が見えづらいのが最大の課題。
+                        </td>
+                        <td class="bg-1">
+                            要望に合わせた候補者の紹介から内定までのプロセスをサポート。<br><br>しかし年収の30%以上という高額な報酬が必要で、特定の業界や職種に候補者が偏りがち。エージェントからの営業圧力で企業側の主体性が保ちにくい面も。
+                        </td>
+                        <td class="bg-2">即戦力人材に直接アプローチできる点は魅力。
+                            一方で利用料が高騰しやすく、候補者の反応率が低いことが課題。<br><br>また採用に至らなくても費用は継続して発生し、すべての採用実務を自社で行う必要がある。</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <section class="cta-section">
+        <div class="cta-triangle"></div>
+        <h2 class="cta-title">テンマガアフィリエイトなら<br>すべての課題を解決します！</h2>
+        <a href="contact.html">
+            <button class="cta-button" href="contact.html">
+                <p class="cta-subtitle">＼ お気軽にお問い合わせください ／</p>
+                今すぐ採用を始める
+            </button>
+        </a>
+    </section>
+
+
+    <section id="plan" class="pricing-section">
+        <img src="/img/img-text1.png" alt="" class="img-text">
+        <h2 class="section-title">料金プラン</h2>
+        <p class="note"><span>シンプル</span> & <span>低コスト</span>な<span>料金</span></p>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <p>初期費用</p>
+                <p class="price highlight">0</p>
+                <p>円</p>
+            </div>
+            <div class="pricing-card">
+                <p>掲載料</p>
+                <p class="price highlight">0</p>
+                <p>円</p>
+            </div>
+        </div>
+        <div class="pricing-grid2">
+            <div class="pricing-card">
+                <p>成果報酬</p>
+                <p class="price highlight">20,000</p>
+                <p>円～</p>
+            </div>
+        </div>
+        <p class="disclaimer">※成果地点等により変動あり</p>
+        <p class="note">
+            <span>成果</span>が<span>発生</span>しなかった<span>場合</span>、<br
+                class="d-md-none"><span>一切</span>の<span>費用</span>は<span>発生</span>しません<span>！</span>
+        </p>
+        <p class="disclaimer">※割引回数券使用時も成果発生まで料金は発生なし</p>
+    </section>
+
+
+    <section class="cta-section">
+        <div class="cta-triangle"></div>
+        <h2 class="cta-title">テンマガアフィリエイトなら<br>すべての課題を解決します！</h2>
+        <a href="contact.html">
+            <button class="cta-button" href="contact.html">
+                <p class="cta-subtitle">＼ お気軽にお問い合わせください ／</p>
+                今すぐ採用を始める
+            </button>
+        </a>
+    </section>
+
+
+    <section id="achievements" class="review-section">
+        <img src="/img/img-text1.png" alt="" class="img-text">
+        <h2 class="section-title">導入企業の声</h2>
+
+
+        <div class="review-grid">
+            <div class="review-card">
+                <img src="/img/company1.png" alt="株式会社P" class="review-image">
+                <h3>株式会社 P <span class="company-type">(IT企業)</span></h3>
+                <p class="review-text">想定していた予算内、いえ予算よりも相当安い金額で、多くの優秀な人材を採用できるようになりました。</p>
+                <p class="highlight-text">採用コスト<span>85</span>%削減、採用数<span>20</span>%増加</p>
+            </div>
+
+            <div class="review-card">
+                <img src="/img/company2.png" alt="株式会社B" class="review-image">
+                <h3>株式会社 B <span class="company-type">(営業代行事業)</span></h3>
+                <p class="review-text">急なニーズにも素早く対応でき、事業拡大が可能に。大量採用時は数万円単位でコスト削減できました。</p>
+                <p class="highlight-text">コスト削減率<span>70</span>%</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="faq" class="faq-section">
+        <h2 class="section-title">Q&A</h2>
+
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question"><span>Q</span>なぜそんなに安いのですか？ <span class="toggle-icon">＋</span></button>
+                <div class="faq-answer">
+                    <p>アフィリエイトモデルの採用だけでなく自社でメディアとアフィリエイトサービス（ASP）を用意しているため、中間コスト等は一切発生していないことも大きいです。</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question"><span>Q</span>どんな業界に対応していますか？ <span class="toggle-icon">＋</span></button>
+                <div class="faq-answer">
+                    <p>幅広い業界と職種に対応しており、特にIT業界や販売、営業職が得意分野です。</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question"><span>Q</span>採用の品質は大丈夫ですか？ <span class="toggle-icon">＋</span></button>
+                <div class="faq-answer">
+                    <p>独自の審査プロセスと厳格な基準で、質の高い人材を確保しています。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-triangle"></div>
+        <h2 class="cta-title">テンマガアフィリエイトなら<br>すべての課題を解決します！</h2>
+        <a href="contact.html">
+            <button class="cta-button" href="contact.html">
+                <p class="cta-subtitle">＼ お気軽にお問い合わせください ／</p>
+                今すぐ採用を始める
+            </button>
+        </a>
+    </section>
+
+
+    <section class="company-info">
+        <div class="transparent-background"></div>
+        <div class="company-details">
+            <img src="/img/logo_foot.png" alt="テンマガアフィリエイト ロゴ" class="company-logo">
+            <p class="company-name">株式会社マジバス</p>
+            <p class="company-address">〒540-0012 大阪府大阪市中央区谷町1丁目3-19 <br class="d-md-none">大手前エストビル2階</p>
+        </div>
+        <button class="back-to-top" onclick="scrollToTop()">▲</button>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="terms.html">利用規約</a>
+            <span>　</span>
+            <a href="#privacy.html">プライバシーポリシー</a>
+        </div>
+        <p class="footer-copyright">© majibass Inc.</p>
+    </footer>
+
+    <script>
+        // TOPへ戻るボタンのスクロール機能
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        // スクロールに応じてTOPへ戻るボタンの表示を切り替える
+        window.addEventListener("scroll", () => {
+            const backToTopButton = document.querySelector(".back-to-top");
+            if (window.scrollY > 200) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+    </script>
+
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = button.querySelector('.toggle-icon');
+
+                // クラスを切り替えて回答の表示を制御
+                answer.classList.toggle('visible');
+                icon.textContent = answer.classList.contains('visible') ? 'ー' : '＋';
+
+                // .faq-questionにrounde-2クラスを付与または削除
+                button.classList.toggle('round-2');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
