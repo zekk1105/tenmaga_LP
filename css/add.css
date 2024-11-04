@@ -490,6 +490,9 @@ body {
     padding: 50px 10%;
 }
 
+.problem-section h2 span{
+    font-size: 2rem;
+}
 
 /* 各課題の項目のスタイル */
 .problem-item {
@@ -576,6 +579,10 @@ body {
     }
 
     .problem-text h3 span{
+        font-size: 1.5rem;
+    }
+
+    .problem-section h2 span{
         font-size: 1.5rem;
     }
 }
@@ -961,7 +968,7 @@ body {
 
 .td-bold span{
     font-weight: bold;
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
 }
 
 .td-icon{
@@ -982,8 +989,7 @@ body {
 
 .comparison-table .highlight {
     color: #d32f2f;
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 2.5rem !important;
 }
 
 .text-tr td{
@@ -1234,6 +1240,8 @@ body {
 /* Q&Aセクション */
 .faq-section {
     padding: 50px 10%;
+    margin-top: -100px;
+    padding-top: 200px;
     text-align: center;
 }
 
@@ -1325,7 +1333,7 @@ body {
 
 @media screen and (max-width:768px){
     .faq-section {
-        padding: 50px 5%;
+        padding: 100px 5%;
     }
     .faq-question {
         font-size: 1rem;
@@ -1375,7 +1383,7 @@ body {
     text-align: center;
     padding: 40px 5%;
     position: relative;
-    overflow: hidden;
+    overflow: initial;
 }
 
 /* 上部透明背景 */
@@ -1421,25 +1429,36 @@ body {
 
 /* TOPへ戻るボタン */
 .back-to-top {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: rgba(51, 51, 51, 0.8);
+    position: absolute;
+    top: -65px;
+    right: 50px;
+    background-color: rgb(51 51 51);
     color: #fff;
     border: none;
-    border-radius: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
+    border-radius: 15px;
+    width: 75px;
+    height: 75px;
+    font-size: 3rem;
     display: none;
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    z-index: 2; /* ボタンがすべての要素の上に来るように */
+    z-index: 2;
+    rotate: 90deg;
 }
 
 .back-to-top:hover {
     background-color: rgba(51, 51, 51, 1);
+}
+
+@media screen and (max-width:768px) {
+    .back-to-top {
+        top: -40px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
 }
 
 
