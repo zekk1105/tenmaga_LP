@@ -1451,10 +1451,29 @@ body {
     font-size: 3rem;
     display: none;
     cursor: pointer;
-    align-items: center;
-    justify-content: center;
+    content: "";
     z-index: 2;
-    rotate: 90deg;
+}
+
+.back-to-top::before,
+.back-to-top::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 25px;
+    border-radius: 9999px;
+    background-color: #ffffff;
+    transform-origin: 50% 2px;
+}
+
+.back-to-top::before {
+  transform: rotate(45deg);
+}
+
+.back-to-top::after {
+  transform: rotate(-45deg);
 }
 
 .back-to-top:hover {
@@ -1469,7 +1488,20 @@ body {
         height: 50px;
         font-size: 2rem;
     }
+    .back-to-top::before, .back-to-top::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 15px;
+    border-radius: 9999px;
+    background-color: #ffffff;
+    transform-origin: 50% 2px;
 }
+}
+
+
 
 
 
